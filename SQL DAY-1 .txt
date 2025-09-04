@@ -1,0 +1,40 @@
+# Rules
+# 1. Always use Camel Casing
+# 2. Don't use Space
+# 3. If it Possible then use (_) 'Underscore'
+
+# Step-1 :  Create Database Mydb_Data;
+# Syntax : Create Database If Not Exists <DatabaseName>;
+Create Database If Not Exists Mydb_Data;
+
+# Step-2 : Use Database : Mydb_Data
+# Syntax : Use <DatabaseName>;
+Use Mydb_Data;
+
+# Show Databases 
+# Syntax : Show Databases;
+Show Databases;
+
+# Step-3 : Create Tables inside Database : Mydb_Data
+#syntax: Create Table <TableName> (Field1 Datetype, Field2 Datatype, Field3 Datatype);
+CREATE TABLE Employee (
+    Id INT,
+    Name VARCHAR(20),
+    Age INT
+);
+
+#Checkimg Table Inside Database
+
+Show Tables;
+
+# Using Select Statement: Retrival of Data
+
+#Syntax : Select * From <TableNAme>;
+#Syntax: Select Field1,Field2, From <TableName>;
+
+SELECT 
+    *
+FROM
+    Employee;
+
+
