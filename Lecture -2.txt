@@ -1,0 +1,147 @@
+# DAY-1:
+
+# Rules
+# 1. Always use Camel Casing
+# 2. Don't use Space
+# 3. If it Possible then use (_) 'Underscore'
+
+# Step-1 :  Create Database Mydb_Data;
+# Syntax : Create Database If Not Exists <DatabaseName>;
+Create Database If Not Exists Mydb_Data;
+
+# Step-2 : Use Database : Mydb_Data
+# Syntax : Use <DatabaseName>;
+Use Mydb_Data;
+
+# Show Databases 
+# Syntax : Show Databases;
+Show Databases;
+
+# Step-3 : Create Tables inside Database : Mydb_Data
+#syntax: Create Table <TableName> (Field1 Datetype, Field2 Datatype, Field3 Datatype);
+CREATE TABLE Employee (
+    Id INT,
+    Name VARCHAR(20),
+    Age INT
+);
+
+#Checkimg Table Inside Database
+
+Show Tables;
+
+# Using Select Statement: Retrival of Data
+
+#Syntax : Select * From <TableNAme>;
+#Syntax: Select Field1,Field2, From <TableName>;
+
+SELECT 
+    *
+FROM
+    Employee;
+
+# DAY-2 :
+
+# INSERT Statement : Inserting the Values inside Table 
+INSERT INTO Employee Values (1,'Modi',30);
+INSERT INTO Employee (Id,NAME,Age) Values (2,'Rahul',32);
+
+SELECT * FROM Employee;
+
+# Using Aggregate Function with Select Statemenyt
+
+SELECT 
+    AVG(Age) AS Average_Age
+FROM
+    Employee;
+
+
+SELECT 
+    COUNT(ID) AS Total_Count
+FROM
+    Employee;
+
+
+
+SELECT 
+    COUNT(DISTINCT (Age)) AS Distinct_Age
+FROM
+    Employee;
+
+
+SELECT 
+    MIN(Age) AS Min_Age,   
+    MAX(Age) AS Max_Age,
+    AVG(Age) AS Average_Age
+FROM
+    Employee;
+    
+    
+SELECT 
+    COUNT(*) AS Total_Count
+FROM
+    Employee;
+    
+# Insert Multiple Entries in Table
+
+INSERT INTO Employee VAlUES
+(3,'Amit',30),
+(4,'Ajay',36),
+(5,'Kumar',45),
+(6,'Rohit',45);
+
+SELECT * FROM Employee;
+    
+# Using Like Operator : Like Operator is used to get Data Based on Filter
+# Where is used for Condition : Conditional Statement : WHERE Clause
+# 'R%' : -> This will gives the output Starting with letter 'R"
+# '%R' : -> This will gives the output Ending with letter 'R'
+# '[A-R]%' -> This will gives the output START with letter 'A' and END with lwtte 'R'
+
+
+SELECT 
+    Name
+FROM
+    Employee
+WHERE
+    Name LIKE 'R%';
+
+
+# Exercise 
+-- Q1. Calculate Average Age of People ?
+-- Q2. Calculate Unique Age group of People ?
+-- Q3. Evaluate the name of the people having age 20 ?
+-- Q4. Calaculate Count of People having age greater than 30 ?
+
+# ANSWER Q1 :
+SELECT 
+    AVG(Age) AS Average_Age
+FROM
+    Employee;
+
+
+
+# ANSWER Q2 :
+SELECT 
+    COUNT(DISTINCT (Age)) AS Uniquw_Age_group
+FROM
+    EMployee;
+
+
+#ANSWER Q3 :
+SELECT 
+    Name
+FROM
+    Employee
+WHERE
+    Age = 30;
+
+
+# ANSWER Q4 :
+SELECT 
+    COUNT(*) AS Total_Count
+FROM
+    Employee
+WHERE
+    Age > 30;
+
+
