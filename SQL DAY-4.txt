@@ -1,3 +1,5 @@
+# DAY-1 :
+
 -- Step 1: Create Database : Mydb_ItVedant
 
 # Syntax: Create Database If Not Exists <DatabaseName>;
@@ -45,8 +47,10 @@ SELECT
     Name, Age
 FROM
     Employee;
-    
-# Day 02:
+
+
+
+# DAY- 02 :
 
 # Insert Statement : Inserting the Values inside Table 
 
@@ -139,8 +143,12 @@ FROM
     Employee
 WHERE
     Age > 30;
-    
-# Day 03:
+
+
+
+
+
+# DAY- 03 :
 
 -- Create Table : Department
 
@@ -229,7 +237,8 @@ Insert into Student_Info Values
 Select * From Student_Info;
 
 
-# Day 04
+
+# DAY- 04 :
 
 -- Create a Database for Company : ABC
 
@@ -356,3 +365,4 @@ FROM
     Transactions
 WHERE
     Transaction_Mode = 'Cash';
+
