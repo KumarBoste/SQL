@@ -1,3 +1,12 @@
+# DAY-1: LINE No-10
+# DAY-2: LINE No-53
+# DAY-3: LINE No-160
+# DAY-4: LINE No-249
+# DAY-5: LINE No-346
+# DAY-6: LINE No-
+
+
+
 # DAY-1:
 
 # Rules
@@ -396,6 +405,7 @@ HR_Email VARCHAR(30) NOT NULL,
 FOREIGN KEY (Employee_Id) REFERENCES Mozila.Employee(Employee_Id));
 
 CREATE TABLE 
+
 
 
 
