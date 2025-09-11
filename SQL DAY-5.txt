@@ -404,7 +404,26 @@ HR_Name VARCHAR(10) NOT NULL,
 HR_Email VARCHAR(30) NOT NULL,
 FOREIGN KEY (Employee_Id) REFERENCES Mozila.Employee(Employee_Id));
 
-CREATE TABLE 
+CREATE TABLE Mozila.Performance (
+Employee_Id INT NOT NULL,
+HR_Id INT NOT NULL,
+Salary INT NOT NULL,
+Department Varchar(15) NOT NULL,
+Feedback Varchar(20) NOt NUll,
+Tenure date NOt NUll,
+Area_of_Improvement Varchar(50) not null,
+Ratings Int NOt NULL,
+FOREIGN KEY (Employee_Id) REFERENCES Mozila.Employee (Employee_Id),
+FOREIGN KEY (HR_Id) REFERENCES Mozila.HR (HR_Id)
+);
+
+ALTER TABLE  
+
+DESCRIBE Mozila.Employee;
+DESCRIBE Mozila.HR;
+DESCRIBE Mozila.Performance;
+
+# DAY - 6 :
 
 
 
