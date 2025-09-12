@@ -1,7 +1,5 @@
 # DAY-1:
 
-
-
 # Rules
 # 1. Always use Camel Casing
 # 2. Don't use Space
@@ -40,10 +38,6 @@ SELECT
     *
 FROM
     Employee;
-
-
-
-
 
 
 
@@ -155,11 +149,7 @@ WHERE
 
 
 
-
-
-
-
-# Day 03:
+# DAY 03:
 
 -- Create Table : Department
 
@@ -248,12 +238,7 @@ Insert into Student_Info Values
 Select * From Student_Info;
 
 
-
-
-
-
-
-# Day-4:
+# DAY-4:
 
 -- Create a Database for Company : ABC
 Create DATABASE If Not Exists ABC;
@@ -523,6 +508,7 @@ INSERT INTO Mozila.Employee VALUES
 
 
 # DAY- 7 :
+
 
 
 
