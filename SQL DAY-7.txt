@@ -397,6 +397,9 @@ CREATE TABLE Mozila.HR (
 Employee_Id INT NOT NULL,
 HR_Id INT PRIMARY KEY UNIQUE NOT NULL,
 HR_Name VARCHAR(10) NOT NULL,
+HR_MobileNo BIGINT NOT NULL,
+HR_Age INT NOT NULL,
+HR_Gender ENUM('Male','Female','Others') NOT NULL,
 HR_Email VARCHAR(30) NOT NULL,
 FOREIGN KEY (Employee_Id) REFERENCES Mozila.Employee(Employee_Id));
 
@@ -508,6 +511,7 @@ INSERT INTO Mozila.Employee VALUES
 
 
 # DAY- 7 :
+
 
 
 
